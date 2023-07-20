@@ -264,6 +264,15 @@ class Unknown(Collection):
     _priority = -1
 
 
+class Offices(Collection):
+    path = '/{api_version}/offices/{id}'
+    fields = {
+        'self': None,
+        'id': None,
+        'display': None,
+    }
+
+
 class Users(Collection):
     """Extra get params = expand, localized"""
     path = '/{api_version}/users/{id}'

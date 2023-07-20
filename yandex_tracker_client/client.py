@@ -22,6 +22,7 @@ class TrackerClient(object):
         self._connection = conn
 
         self.attachments = self._get_collection(collections.Attachments)
+        self.offices = self._get_collection(collections.Offices)
         self.users = self._get_collection(collections.Users)
         self.queues = self._get_collection(collections.Queues)
         self.issues = self._get_collection(collections.Issues)
