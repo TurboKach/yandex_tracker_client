@@ -1370,6 +1370,15 @@ class Filters(Collection):
     }
 
 
+class Services(Collection):
+    path = '/{api_version}/services/{id}'
+    fields = {
+        'id': None,
+        'self': None,
+        'display': None,
+    }
+
+
 class checklistItems(Collection):
     path = '/{api_version}/issues/{issue}/checklistItems/{id}'
     fields = {
